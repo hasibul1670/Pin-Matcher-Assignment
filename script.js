@@ -31,12 +31,16 @@ document.getElementById("number-pad-form").value =null;
 
 //Create a Function for Submit Button//
 function submit(){
-  if(document.getElementById("generate-number-form").value==document.getElementById("number-pad-form").value){
-    document.getElementById("matched").style.display="block";
-    document.getElementById("not-matched").style.display="none";
-  }
-  else{
-    document.getElementById("not-matched").style.display="block";
-    document.getElementById("matched").style.display="none";
+  if(document.getElementById("number-pad-form").value!=""){
+
+    if(document.getElementById("generate-number-form").value==document.getElementById("number-pad-form").value){
+
+      document.getElementById("matched").style.display="block";
+      document.getElementById("not-matched").style.display="none";
+    }
+    else{
+      document.getElementById("not-matched").style.display="block";
+      document.getElementById("matched").style.display="none";
+    }
   }
 }
