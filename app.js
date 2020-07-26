@@ -6,7 +6,6 @@ function randomNumber(num){
         null;  
     }
     else{
-    console.log(randomNumber);
     document.getElementById("generate-number-form").value=randomNumber;
 }
 } 
@@ -33,12 +32,10 @@ document.getElementById("number-pad-form").value =null;
 //Create a Function for Submit Button//
 function submit(){
   if(document.getElementById("generate-number-form").value==document.getElementById("number-pad-form").value){
-    console.log("yesss");
     document.getElementById("matched").style.display="block";
     document.getElementById("not-matched").style.display="none";
   }
   else{
-    console.log("nooooo");
     document.getElementById("not-matched").style.display="block";
     document.getElementById("matched").style.display="none";
   }
